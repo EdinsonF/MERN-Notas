@@ -1,0 +1,27 @@
+### CONSULTAR TODOS LOS REGISTROS
+GET http://localhost:4000/notas
+
+### REGISTRAR UNA NOTA UEVA
+
+POST http://localhost:4000/nota
+Content-Type: application/json
+
+{
+    "titulo": "JOSE",
+    "descripcion": "EL MEJOR PAPA DEL MUNDO"
+}
+
+###ELIMINAR REGISTROS
+DELETE http://localhost:4000/nota/607cf214ae8b9b208400f62e
+
+### ACTUALIZAR NOTA
+PUT http://localhost:4000/notas/607cf214ae8b9b208400f62e
+Content-Type: application/json
+
+{
+    "titulo": "Edinson",
+    "descripcion": "Figueroa"
+}
+
+### OBTENER NOTA
+GET http://localhost:4000/notas/607cf214ae8b9b208400f62e
